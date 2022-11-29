@@ -3,7 +3,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Open Sans';
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", "Open Sans";
   -webkit-appearance: none;
 }
 
@@ -46,7 +46,6 @@ h1 {
 .top-buttons {
   display: flex;
   align-items: center;
-
 }
 
 input {
@@ -83,6 +82,23 @@ input[type="button"]:hover {
 #clear-button {
   color: #fff;
   background-color: rgb(255, 42, 42);
+}
+
+#backspace-button {
+  transform: rotate(-90deg);
+}
+
+#backspace-button,
+#brackets-button,
+#percentage-button,
+#divide-button,
+#multiply-button,
+#subtract-button,
+#plus-button,
+#equal-button,
+#decimal-button,
+#negative-button {
+  color: #66d066;
 }
 
 a {

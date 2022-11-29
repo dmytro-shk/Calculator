@@ -29,38 +29,44 @@
           </button>
         </div>
       </div>
-      <div class="first-row">
+      <div class="zero-row" >
         <input type="text" name="result" id="result" placeholder="Result" readonly />
-        <input type="button" value="C" onclick="result.value=''" id="clear-button" />
+        <input type="button" value="&#9751;" onclick="removeLastChar()" id="backspace-button" />
+      </div>
+      <div class="first-row">
+        <input type="button" value="C" onclick="celarInput()" id="clear-button" />
+        <input type="button" value="(&nbsp;)" onclick="addBrackets()" id="brackets-button" />
+        <input type="button" value="%" onclick="" id="percentage-button" />
+        <input type="button" value="/" onclick="liveScreen('/')" id="divide-button" />
       </div>
       <div class="second-row">
         <input type="button" value="1" onclick="liveScreen(1)" />
         <input type="button" value="2" onclick="liveScreen(2)" />
         <input type="button" value="3" onclick="liveScreen(3)" />
-        <input type="button" value="+" onclick="liveScreen('+')" />
+        <input type="button" value="x" onclick="liveScreen('*')" id="multiply-button" />
       </div>
       <div class="third-row">
         <input type="button" value="4" onclick=" liveScreen(4)" />
         <input type="button" value="5" onclick=" liveScreen(5)" />
         <input type="button" value="6" onclick=" liveScreen(6)" />
-        <input type="button" value="-" onclick="liveScreen('-')" />
+        <input type="button" value="-" onclick="liveScreen('-')" id="subtract-button" />
       </div>
       <div class="fourth-row">
         <input type="button" value="7" onclick="liveScreen(7)" />
         <input type="button" value="8" onclick="liveScreen(8)" />
         <input type="button" value="9" onclick=" liveScreen(9)" />
-        <input type="button" value="x" onclick="liveScreen('*')" />
+        <input type="button" value="+" onclick="liveScreen('+')" id="plus-button" />
       </div>
       <div class="fifth-row">
-        <input type="button" value="/" onclick="liveScreen('/')" />
+        <input type="button" value="&plusmn;" onclick="toNegative()" id="negative-button" />
         <input type="button" value="0" onclick="liveScreen(0)" />
-        <input type="button" value="." onclick="liveScreen('.')" />
-        <input type="button" value="=" onclick="calculate(result.value)" />
+        <input type="button" value="." onclick="liveScreen('.')" id="decimal-button" />
+        <input type="button" value="=" onclick="calculate(result.value)" id="equal-button" />
       </div>
     </div>
   </div>
-  <script src="scripts/script.js">
-  </script>
+  <script src="scripts/utils.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
 
 </html>

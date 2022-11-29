@@ -14,13 +14,13 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(7, 210, 199);
+  background-color: rgb(255, 255, 255);
   transition: 0.8s all;
 }
 
 h1 {
   margin-bottom: 1.5%;
-  color: #fff;
+  color: rgb(214, 214, 214);
   font-weight: normal;
 }
 
@@ -50,7 +50,7 @@ input {
   font-size: 1em;
   cursor: pointer;
   width: 70px;
-  background-color: #fff;
+  background-color: rgb(214, 214, 214);
   border: none;
   outline: none;
   border-radius: 100px;
@@ -70,7 +70,7 @@ input[type="button"] {
 }
 
 input[type="text"] {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(214, 214, 214);
   width: 222.5px;
 }
 
@@ -82,6 +82,23 @@ input[type="button"]:hover {
 #clear-button {
   color: #fff;
   background-color: rgb(255, 25, 25);
+}
+
+#backspace-button {
+  transform: rotate(-90deg);
+}
+
+#backspace-button,
+#brackets-button,
+#percentage-button,
+#divide-button,
+#multiply-button,
+#subtract-button,
+#plus-button,
+#equal-button,
+#decimal-button,
+#negative-button {
+  color: #000000;
 }
 
 a {
